@@ -9,6 +9,12 @@ public class Main {
         lista_objetos.add(new Auto("Xplorer", 225));
         lista_objetos.add(new Bicicleta("Bici Personal", false));
 
+        // Iterar a través del ArrayList e invocar el método polimórfico
+        for (ImpactoEcologico objeto : lista_objetos) {
+            System.out.println("Objeto: " + objeto.getClass().getSimpleName());
+            System.out.println("Impacto Ecológico: " + objeto.obtenerImpactoEcologico());
+            System.out.println("-----------------------------");
+        }
     }
 }
 
